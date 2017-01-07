@@ -1,23 +1,17 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
-    "target": "es5",
-    "noImplicitAny": false,
     "sourceMap": true,
-    "mapRoot": "",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
-    "outDir": "lib",
-    "skipLibCheck": true,
-    "rootDir": "."
+    "lib": ["es2015", "dom"],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
   },
   "angularCompilerOptions": {
-    "genDir": "./src/compiled",
-    "skipMetadataEmit": true
-  }
+    "genDir": "compiled",
+    "skipMetadataEmit" : true
+ }
 }

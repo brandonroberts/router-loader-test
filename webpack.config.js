@@ -5,7 +5,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js']
   },
-  entry: './main.aot.ts',
+  entry: './src/main.aot.ts',
   output: {
     path: './dist',
     publicPath: '/',
@@ -20,7 +20,7 @@ module.exports = {
         test: /\.ts$/,
         loaders: [
           'awesome-typescript-loader',
-          'angular2-router-loader?&aot=true&genDir=src/compiled/src'
+          'angular-router-loader?aot=true&genDir=compiled'
         ]
       }
     ]
